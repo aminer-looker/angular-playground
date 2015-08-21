@@ -1,0 +1,19 @@
+.portraitPanel {
+	position: absolute; top: 50px; right: 20%; left: 55%; height: 400px;
+}
+.thumbPanel {
+	position: absolute; top: 50px; right: 45%; left: 20%; height: 400px;
+}
+thumbnail {
+	display: block;
+	margin-bottom: 10px;
+	padding: 0;
+}
+thumbnail img {
+	height: 50px; max-width: 50px;
+	
+	display: inline;
+}
+thumbnail.ng-anchor {
+	transition: 0.5s linear all;
+}

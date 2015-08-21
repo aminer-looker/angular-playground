@@ -1,0 +1,12 @@
+<div class='header'>
+	<div 
+		class="tab-title {{tab.selected ? 'selected' : ''}}"
+		ng-repeat="tab in tabs"
+		ng-click="controller.changeTo(tab.title);"
+		style="background:{{tab.color}};"
+		>
+		
+		{{tab.title}}
+	</div>
+</div>
+<div class='tab-content' ng-transclude></div>

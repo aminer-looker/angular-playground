@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+	<head>
+		<title>Moving Images Example</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="example.css">
+	</head>
+	
+	<body ng-controller="PresidentsController as controller">
+		<thumbnail-panel controller="controller"/>
+		
+		<div class="portraitPanel">
+			<img ng-animate-ref="{{selection.name}}" ng-src="{{selection.url}}">
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.js"></script>
+		<script src="example.js"></script>
+	</body>
+</html>
