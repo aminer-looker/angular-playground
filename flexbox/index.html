@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html style="background: lime">
+  <head>
+    <style>
+      html { font-size: 10px; }
+      .flex-container, .flex-container .header, .flex-container .footer { display: -webkit-flex; display: flex; }
+      .message { flex-basis: 70%; overflow: auto; }
+      .message-list { flex-basis: 15%; }
+      .mailbox-list { flex-basis: 15%; }
+      .flex-container .header, .flex-container .footer { width: 100%; height: 5rem; }
+      .outer-box { flex-direction: column; }
+      main { flex-direction: row-reverse; }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container outer-box" style="background: blue">
+      <div class="header" style="background: green">Lorem Ipsum</div>
+      <main class="flex-container" style="background: yellow">
+        <article class="message" style="background: orange">
+          Pellentesque aliquam erat metus, at porttitor odio feugiat sit amet. Pellentesque magna diam, rutrum
+          vitae tincidunt in, suscipit quis risus. Cras facilisis vehicula neque, a hendrerit odio pellentesque
+          eu. Sed tempor erat eget libero semper, et vehicula nunc bibendum. Etiam et libero felis. Sed
+          scelerisque euismod aliquam. Cras suscipit eget felis et dictum. In blandit lorem in rutrum accumsan.
+          Vestibulum eros tellus, faucibus sit amet massa suscipit, imperdiet blandit arcu. Proin ultrices odio
+          sed tempor placerat. Nulla ut ullamcorper tortor, quis facilisis sapien.
+        </article>
+        <div class="message-list" style="background: pink">
+          <ul>
+            <li>Alpha</li>
+            <li>Bravo</li>
+            <li>Charlie</li>
+          </ul>
+        </div>
+        <div class="mailbox-list" style="background: cyan">
+          <ul>
+            <li>Inbox</li>
+            <li>Flagged</li>
+            <li>Drafts</li>
+            <li>Archive</li>
+            <li>Trash</li>
+          </ul>
+        </div>
+      </main>
+      <div class="footer" style="background: brown">&copy; 2015 by Andrew Miner</div>
+    </div>
+  </body>
+</html
